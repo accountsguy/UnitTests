@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="accountsguy.net.unittests.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp"
+    android:background="@android:color/holo_blue_dark" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AccountsGuy.Net"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:textSize="39sp"
+        android:paddingBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User name"
+        android:padding="10dp"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textWebPassword"
+        android:hint="Enter Password"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:fadingEdgeLength="10dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:text="login"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:onClick="loginaccount"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="12sp"
+        android:paddingBottom="20dp"
+        android:text="Hi World"
+        android:visibility="gone" />
+</LinearLayout>
